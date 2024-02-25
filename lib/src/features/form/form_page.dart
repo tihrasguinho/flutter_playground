@@ -35,7 +35,7 @@ class _FormPageState extends State<FormPage> {
                   },
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(name: value));
+                    widget.controller.update(state.copyWith(name: value));
                   },
                 ),
                 TextFormField(
@@ -50,7 +50,7 @@ class _FormPageState extends State<FormPage> {
                   },
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(email: value));
+                    widget.controller.update(state.copyWith(email: value));
                   },
                 ),
                 TextFormField(
@@ -66,7 +66,7 @@ class _FormPageState extends State<FormPage> {
                   },
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(age: int.parse(value)));
+                    widget.controller.update(state.copyWith(age: int.parse(value)));
                   },
                 ),
                 TextFormField(
@@ -82,7 +82,7 @@ class _FormPageState extends State<FormPage> {
                   },
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(weight: double.parse(value)));
+                    widget.controller.update(state.copyWith(weight: double.parse(value)));
                   },
                 ),
                 TextFormField(
@@ -98,7 +98,7 @@ class _FormPageState extends State<FormPage> {
                   },
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(height: double.parse(value)));
+                    widget.controller.update(state.copyWith(height: double.parse(value)));
                   },
                 ),
                 TextFormField(
@@ -113,7 +113,7 @@ class _FormPageState extends State<FormPage> {
                   },
                   autovalidateMode: AutovalidateMode.onUserInteraction,
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(phone: value));
+                    widget.controller.update(state.copyWith(phone: value));
                   },
                 ),
                 DropdownButtonFormField<bool>(
@@ -138,7 +138,7 @@ class _FormPageState extends State<FormPage> {
                     )
                   ],
                   onChanged: (value) {
-                    widget.controller.update(widget.controller.value.copyWith(enabled: value));
+                    widget.controller.update(state.copyWith(enabled: value));
                   },
                 ),
               ],
